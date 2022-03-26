@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber duplicate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div style="display:flex">
+                <a href="#home" id="navbar__logo">Uber</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <div class="dropdown">
+                        <!-- <input class="text-box" type="text" placeholder="Select on" readonly> -->
+                        <li class="navbar__item">
+                            <a href="#company" class="navbar__links" id="company-page">Company<img class = "dropdown_icon"src="Image/Icon/arrow-down.png" alt="DropDown arrow"></a>
+
+                        </li>
+                        <div class="options">
+                            <div onclick="show('HTML')">About us</div>
+                            <div onclick="show('CSS')">Our offerings</div>
+                            <div onclick="show('CSS')">How Uber works</div>
+                            <div onclick="show('CSS')">Global citizenship</div>
+                            <div onclick="show('CSS')">Newsroom</div>
+                            <div onclick="show('CSS')">Investor relations</div>
+                            <div onclick="show('CSS')">Blog</div>
+                            <div onclick="show('CSS')">Careers</div>
+                        </div>
+                    </div>
+                    <li class="navbar__item">
+                        <a href="#safety" class="navbar__links" id="safety-page">Safety</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#help" class="navbar__links" id="help-page">Help</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#COVID-19" class="navbar__links" id="COVID19-page">COVID-19 resources</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar__menu">
+                <ul class="navbar__productwithicon">
+                    <li class="navbar__items">
+                        <a href="#products" class="navbar__linkpage" id="product-page">
+                            <img class="product_icon" src="Image/Icon/Vector.png" alt="Product Icon">Products
+                        </a>
+                    </li>
+                    <li class="navbar__items">
+                        <a href="#log-in" class="navbar__linkpage" id="login-page">
+                            <img class="product_icon" src="Image/Icon/user.png">Log in</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="navbar__btn">
+                        <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                    </li>
+                </ul>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="second_container">
+        <img class="uber_photo" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_834/v1613521435/assets/bc/0529b6-c37a-416b-9907-2cb44c4c2888/original/Earner_Home_bg_desktop2x.png">
+        <div class="signup_container">
+            <div class="option">
+                <ul>
+                    <li class="itema active-link">
+                        <img class="icons" src="Image/Icon/el_signal.png" alt="Signal">
+                        <div class="fixed">
+
+                            <a href="#" class="Hint">Drive or <br> deliver</a>
+                        </div>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="itema">
+                        <img class="icons" src="Image/Icon/icon-park-outline_fork-spoon.png" alt="Eat">
+                        <div class="fixed">
+                            <a href="#" class="Hint">Eat
+                            </a>
+                        </div>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="itema">
+                        <img class="icons" src="Image/Icon/bx_car.png" alt="Ride">
+                        <div class="fixed">
+                            <a href="#" class="Hint">Ride
+                            </a>
+                        </div>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="block">
+                <h2 class="Headline">Get in the driver’s seat and get paid</h2>
+                <p class="Subline">Drive on the platform with the largest network of active riders.</p>
+            </ul>
+            <ul>
+                <li class="signup__btn">
+                    <a href="#sign-up-to-drive" class="signupbutton" id="signup">Sign up to drive</a>
+                </li>
+            </ul>
+            <ul class='nav_list'>
+                <div class='nav_list_item'>
+                    <li>Learn more about driving and delivering</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="third_container">
+        <ul class="business_headline">
+            <h2 class="clmn_headline">Uber For Business</h2>
+            <p class="clmn_paragraph">Transform the way your company moves and feeds its people.</p>
+            <ul class="seeHow_button">
+                <a href="#see-how" class="seeHowButton" id="seeHow">See how</a>
+            </ul>
+        </ul>
+    </div>
+
+    <style>
+        .flex-container {
+            display: flex;
+            padding: 0px 130px;
+        }
+        
+        .banner-img {
+            display: flex;
+            flex: 6;
+            margin-right: 20px;
+        }
+        
+        .fluid-img {
+            width: 100%;
+        }
+        
+        .detail-form {
+            display: flex;
+            flex: 6;
+        }
+    </style>
+
+    <div class="container flex-container">
+        <div class="banner-img">
+            <img class="fluid-img" src="Image/reserve-background-transparent-imgleft-1x 1.svg">
+        </div>
+        <div class="detail-form">
+            <div style="margin: 55px;">
+                <h2 class="data_headline">Reserve a ride in advance</h2>
+                <p class="data_subline">Complete your plans today by reserving a ride. Request a ride up to 30 days in advance, at any time and on any day of the year.</p>
+                <a href="#Learn-about-Uber-Reserve" class="learnAbout">Learn about Uber Reserve</a>
+                <h1 class="description">Destination</h1>
+                <fill>
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="Where from?">
+                        <input type="text" id="lname" name="lastname" placeholder="Where to?">
+                    </form>
+                </fill>
+                <h1 class="choosedateandtime">Choose date and time</h1>
+                <div>
+                    <form class="displayrow" action="/action_page.php">
+                        <input class="row" type="date" id="date" name="date" placeholder="2022/02/04">
+                        <select id="time" name="time" class="row">
+                            <option value="3:42 PM">3:42 PM</option>
+                            <option value="12:00 AM">12:00 AM</option>
+                            <option value="12:30 AM">12:30 AM</option>
+                            <option value="12:45 AM">12:45 AM</option>
+                            <option value="1:00 AM">1:00 AM</option>
+                            <option value="1:15 AM">1:15 AM</option>
+                        </select>
+                    </form>
+                </div>
+                <input type="submit" value="Reserve a ride">
+                <p style="color: grey;font-size: 14px;">Reserve may not be available for your pickup location</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        .container-flex {
+            display: flex;
+            padding: 30px 130px;
+        }
+        
+        .driver-img {
+            display: flex;
+            flex: 6;
+        }
+        
+        .driver {
+            width: 558px;
+            height: 372px;
+        }
+        
+        .road-img {
+            display: flex;
+            flex: 6;
+        }
+        
+        .road {
+            width: 558px;
+            height: 372px;
+        }
+    </style>
+    <div>
+        <h2 style="margin-left: 200px; font-size: 36px; padding-top: 80px;">Focus on safety, where ever you go</h2>
+        <div class="container container-flex">
+            <div class="driver-image">
+                <img class="driver" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1613520218/assets/3e/e98625-31e6-4536-8646-976a1ee3f210/original/Safety_Home_Img2x.png" alt="Driver image">
+                <h3 style="font-size: 18px; font-weight: 600; line-height: 24px;">Our commitment to your safety</h3>
+                <p style="font-size: 16px; line-height: 24px; padding-top: 10px; padding-bottom: 20px;">With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users.</p>
+                <div class='modules'>
+                    <li class="modules_list">Read about our Community Guidelines</li>
+                    <div style="padding: 12px;"></div>
+                    <li class="modules_list">See all safety features</li>
+                </div>
+            </div>
+            <div style="padding: 20px; "></div>
+            <div class="road-image ">
+                <img class="road " src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png " alt="Road Image ">
+                <h3 style="font-size: 18px; font-weight: 600; line-height: 24px; ">Setting 10,000+ cities in motion</h3>
+                <p style="font-size: 16px; line-height: 24px; padding-top: 10px; padding-bottom: 20px;">The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.</p>
+                <div class='modules'>
+                    <li class="modules_list">View all</li>
+                    <div style="padding: 12px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .flex-field {
+            display: flex;
+        }
+        
+        .about-us {
+            display: flex;
+            flex: 6;
+        }
+        
+        .aboutus_icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+    <div style="margin-right: 200px; margin-left: 200px; margin-top: 100px; margin-bottom: 100px;">
+        <div class="container flex-field">
+            <div class="about_us">
+                <img class="aboutus_icon" src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_30,h_30/v1542256135/assets/dd/c53d7b-8921-4dc7-93f4-45fb59f4ffb9/original/person-multiple-outlined.svg" alt="About us icon">
+                <div style="padding-bottom: 12px;"></div>
+                <h3 style="font-size:18px; font-weight: 600; line-height: 24px;">About us</h3>
+                <p style="font-size: 16px; line-height: 24px; padding-top: 10px; padding-bottom: 20px;">Find out how we started, what drives us, and how we’re reimagining how the world moves.</p>
+                <div class='modules'>
+                    <li class="modules_list">Learn more about Uber</li>
+                    <div style="padding: 12px;"></div>
+                </div>
+            </div>
+            <div style="padding: 20px; "></div>
+            <div class="about_us">
+                <img class="aboutus_icon" src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_30,h_30/v1542254244/assets/eb/68c631-5041-4eeb-9114-80048a326782/original/document-outlined.svg" alt="Newsroom icon">
+                <div style="padding-bottom: 12px;"></div>
+                <h3 style="font-size:18px; font-weight: 600; line-height: 24px;">Newsroom</h3>
+                <p style="font-size: 16px; line-height: 24px; padding-top: 10px; padding-bottom: 20px;">See announcements about our latest releases, initiatives, and partnerships.</p>
+                <div class='modules'>
+                    <li class="modules_list">Go to Newsroom</li>
+                    <div style="padding: 12px;"></div>
+                </div>
+            </div>
+            <div style="padding: 20px; "></div>
+            <div class="about_us">
+                <img class="aboutus_icon" src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_30,h_30/v1542255370/assets/64/58118a-0ece-4f80-93ee-8041b53593d5/original/home-outlined.svg" alt="Global citizenship icon">
+                <div style="padding-bottom: 12px;"></div>
+                <h3 style="font-size:18px; font-weight: 600; line-height: 24px;">Global citizenship</h3>
+                <p style="font-size: 16px; line-height: 24px; padding-top: 10px; padding-bottom: 20px;">Read about our commitment to making a positive impact in the cities we serve.</p>
+                <div class='modules'>
+                    <li class="modules_list">See our partnerships</li>
+                    <div style="padding: 12px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .download-flex {
+            display: flex;
+        }
+        
+        .download_app {
+            display: flex;
+            flex: 1;
+        }
+        
+        .download_field {
+            align-items: center;
+            display: flex;
+            width: 100%;
+            background-color: white;
+            border: 0.5px solid rgb(226, 223, 223);
+            padding: 20px;
+        }
+        
+        .uber_app {
+            height: 150px;
+            width: 150px;
+            margin-right: 20px;
+        }
+        
+        .arrow_icon {
+            height: 16px;
+            padding-left: 30px;
+            height: 16px;
+            padding-left: 30px;
+            position: relative;
+            left: 0;
+        }
+        
+        .download_field:hover {
+            cursor: pointer;
+        }
+        
+        .download_app:hover .arrow_icon {
+            position: relative;
+            left: 20px;
+            animation: example infinite ease-in-out;
+            animation-duration: 4s;
+        }
+        
+        @keyframes example {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 20px;
+                top: 0px;
+            }
+        }
+    </style>
+    <div style=" background-color: #F6F6F6; padding: 100px 200px;">
+        <h2 style="font-size: 36px; padding-bottom: 50px;">There’s more to love in the apps</h2>
+        <div class="container download-flex">
+            <div class="download_app">
+                <div class="download_field">
+                    <img class="uber_app" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_188,h_188/v1618459302/assets/8e/cbcd2e-e7f1-4bd1-ae4e-5343b99ff22f/original/Driver-App-logo.png" alt="Uber app">
+                    <h2 style="font-size: 24px;">Download the Driver app</h2>
+                    <img class="arrow_icon active-hover" src="Image/Icon/Group.png" alt="Arrow">
+                </div>
+            </div>
+            <div style="padding: 20px; "></div>
+            <div class="download_app">
+                <div class="download_field">
+                    <img class="uber_app" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_188,h_188/v1618459257/assets/13/6bfdbd-cdb6-4221-92c1-cab1feaa39f3/original/Rider-App-logo.png" alt="Uber">
+                    <h2 style="font-size: 24px;">Download the Uber app</h2>
+                    <img class="arrow_icon" src="Image/Icon/Group.png" alt="Arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .signup-flex {
+            display: flex;
+        }
+        
+        .driveride_field {
+            display: flex;
+            flex: 1;
+        }
+        
+        .signup_field {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 70px 0px;
+            border-bottom: 1.5px solid rgb(5, 5, 5);
+        }
+        
+        .arrow {
+            height: 26px;
+            padding-left: 30px;
+            position: relative;
+            left: 0;
+        }
+        
+        .signup_field:hover {
+            cursor: pointer;
+        }
+        
+        .signup_field:hover .arrow {
+            position: relative;
+            left: 20px;
+            /* animation-name: example;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards; */
+            animation: mymove 0.5s infinite;
+            -webkit-animation: mymove 0.5s infinite;
+        }
+        
+        @keyframes mymove {
+            from {
+                left: 0px;
+                top: 0px;
+                transition: 0.5s ease-in-out;
+            }
+            to {
+                left: 10px;
+                top: 0px;
+            }
+        }
+    </style>
+    <div style=" padding: 50px 200px;">
+        <div class="container signup-flex">
+            <div class="driveride_field ">
+                <div class="signup_field ">
+                    <h2 style="font-size: 36px; ">Sign up to drive</h2>
+                    <img class="arrow" src=" Image/Icon/Group.png " alt="arrow_icon ">
+                </div>
+            </div>
+            <div style="padding: 20px; "></div>
+            <div class="driveride_field ">
+                <div class="signup_field ">
+                    <h2 style="font-size: 36px; ">Sign up to drive</h2>
+                    <img class="arrow" src=" Image/Icon/Group.png " alt="arrow_icon ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js "></script>
+</body>
+
+</html>
